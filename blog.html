@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pinko Blog</title>
+    <!-- play cdn for tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: "#e5425b",
+              red: "#DC143C",
+              white: "#fff",
+              paleWhite: "#bdacaa",
+              darkGray: "#A9A9A9",
+              black: "#000",
+              hoverBlack: "#000000e2",
+              grayBlack: "#252224",
+              transparent: "hsla(0, 0%, 0%, 0.3)",
+            },
+            fontFamily: {
+              Montserrat: ["Montserrat", "sans-serif"],
+            },
+          },
+        },
+      };
+    </script>
+    <!-- google fonts link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- normalized css -->
+    <link rel="stylesheet" href="./style/normalized.css" />
+    <!-- fontAwesome CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- Customized css -->
+    <link rel="stylesheet" href="./style/customized.css" />
+    <style>
+      /* Style for the active link */
+      .active {
+        background-color: black !important;
+        color: white !important;
+      }
+    </style>
+  </head>
+  <body>
+    <!--Contents need to be placed here!-->
+    <div class="bg-transparent py-[0.3rem] z-50">
+      <img src="component/about/tooplate_sp_wrapper (1).jpg" alt="background" />
+      <header class="header-container w-[960px] px-3 m-auto mt-[-20rem]">
+        <nav
+          class="flex justify-between items-center w-[900px] h-[60px] px-[20]"
+        >
+          <div>
+            <img
+              class="w-[130px] ml-[5.5rem]"
+              src="component/tooplate_logo.png"
+              alt=""
+            />
+          </div>
+          <ul class="flex gap-[0.5rem] font-Montserrat text-white text-[15px]">
+            <li class="menu-item hover:bg-hoverBlack rounded-md py-1 px-2">
+              <a href="index.html">Home</a>
+            </li>
+            <li class="menu-item hover:bg-hoverBlack rounded-md py-1 px-2">
+              <a href="./aboutUs.html">About Us</a>
+            </li>
+            <li class="menu-item hover:bg-hoverBlack rounded-md py-1 px-2">
+              <a href="./blog.html">Blog</a>
+            </li>
+            <li class="menu-item hover:bg-hoverBlack rounded-md py-1 px-2">
+              <a href="./gallery.html">Gallery</a>
+            </li>
+            <li class="menu-item hover:bg-hoverBlack rounded-md py-1 px-2">
+              <a href="./contact.html">Contact Us</a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+      <main class="blog-container w-[900px] px-3 m-auto h[300px] py[5rem]">
+        <div class="flex flex gap-2 flex-col flex-direction: column;">
+          <h3
+            class="text-[34px] font-semibold ml-[3rem] mt-[2rem] text-paleWhite"
+          >
+            Blog
+          </h3>
+          <p class="ml-[3rem] text-[15px] text-darkGray">
+            Phasellus quis nunc sed nunc lobortis elementum. Aliquam viverra
+            consectetur purus, porta laoreet ante porttitor a. In a tellus leo,
+            sit amet consequat felis. Nullam fermentum risus vitae lectus
+            posuere. Validate
+            <span class="text-red underline font-semibold">XHTML</span> and
+            <span class="text-red underline font-semibold">CSS</span> .
+          </p>
+        </div>
+      </main>
+      <div
+        class="bg-grayBlack w-[100%] flex flex-direction: column gap-[2rem] px-[15rem] mt-[6rem]"
+      >
+        <div class="w-[100%]">
+          <div class="w-[150%]">
+            <h3 class="text-[2.5rem] text-white">Free Website Templates</h3>
+            <div class="w-[100%] flex flex-row mt-[2.5rem]">
+              <img
+                class="w-[20%]"
+                src="component/about/tooplate_image_02.png"
+                alt="tool"
+              />
+              <div class="w-[100%] ml-[1rem] text-[0.9rem] text-paleWhite">
+                <p>
+                  Posted in <span class="text-red underline">Website</span>,
+                  <span class="text-red underline">Designs</span> | Date: March
+                  24, 2048
+                </p>
+                <p class="mt-[0.5rem] text-paleWhite mr-[16rem]">
+                  Aliquam nec felis tellus. Nulla ut nibh elit, ut fermentum mi.
+                  Aliquam adipiscing, nunc vel euismod viverra, metus risus
+                  ullamcorper diam, tempus consectetur diam metus ultricies
+                  nulla. Nullam fermentum risus vitae lectus posuere.
+                  Suspendisse in tempus lectus. Nulla laoreet odio eu ligula
+                  rhoncus luctus.
+                </p>
+                <div class="w-[450px] mt-[1rem]">
+                  <span class="text-red underline">132 comments</span>
+                  <button class="rounded-md bg-hoverBlack w-[3.5rem] ml-[8rem]">
+                    More
+                  </button>
+                </div>
+              </div>
+            </div>
+            <h3 class="text-[2.5rem] text-white mt-[1rem]">
+              Internet Marketing Service
+            </h3>
+            <div class="w-[100%] flex flex-row mt-[2.5rem]">
+              <img
+                class="w-[20%]"
+                src="component/blog/image/tooplate_image_03.png"
+                alt="tool"
+              />
+              <div class="w-[100%] ml-[1rem] text-[0.9rem] text-paleWhite">
+                <p>
+                  Posted in <span class="text-red underline">3D</span>,
+                  <span class="text-red underline">Animations</span> | Date:
+                  March 24, 2048
+                </p>
+                <p class="mt-[0.5rem] text-paleWhite mr-[16rem]">
+                  Vestibulum adipiscing tempus elit eu condimentum. Fusce at mi
+                  felis. Etiam sed velit nibh. Nunc bibendum justo nec eros
+                  elementum auctor. Vestibulum ante ipsum primis in faucibus
+                  orci luctus et ultrices posuere cubilia Curae; Morbi
+                  sollicitudin ultrices urna, at placerat urna pharetra dictum.
+                </p>
+                <div class="w-[450px] mt-[1rem]">
+                  <span class="text-red underline">148 comments</span>
+                  <button class="rounded-md bg-hoverBlack w-[3.5rem] ml-[8rem]">
+                    More
+                  </button>
+                </div>
+              </div>
+            </div>
+            <h3 class="text-[2.5rem] text-white mt-[1rem]">
+              Design Tips for Designer
+            </h3>
+            <div class="w-[100%] flex flex-row mt-[2.5rem]">
+              <img
+                class="w-[20%]"
+                src="component/blog/image/tooplate_image_04.png"
+                alt="tool"
+              />
+              <div class="w-[100%] ml-[1rem] text-[0.9rem] text-paleWhite">
+                <p>
+                  Posted in
+                  <span class="text-red underline">Illustrations</span>,
+                  <span class="text-red underline">Graphics</span> | Date: March
+                  18, 2048
+                </p>
+                <p class="mt-[0.5rem] text-paleWhite mr-[16rem]">
+                  Nulla elementum tincidunt enim auctor laoreet. Suspendisse
+                  ornare, ligula at dignissim cursus, sapien orci posuere magna,
+                  sed eleifend magna nulla at justo. Suspendisse erat quam,
+                  varius eu auctor non, dictum nec lorem. Sed ligula velit,
+                  convallis eu laoreet at, adipiscing et libero. In ultrices
+                  semper velit ac consectetur.
+                </p>
+                <div class="w-[450px] mt-[1rem]">
+                  <span class="text-red underline">164 comments</span>
+                  <button class="rounded-md bg-hoverBlack w-[3.5rem] ml-[8rem]">
+                    More
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="w-[60%] ml-[3rem] mt-[1rem] flex flex-col	flex-direction: column; gap-[1rem]">
+          <h3 class="text-[2rem] text-white">Latest Projects</h3>
+          <span class="text-red font-semibold"
+            >Aliquam luctus posuere velit</span
+          >
+          <img src="component/blog/image/tooplate_image_05.png" alt="" />
+          <span class="text-red font-semibold"
+            >Fusce euismod mattis mauris</span
+          >
+          <img src="component/blog/image/tooplate_image_06.png" alt="" />
+          <span class="text-red font-semibold"
+            >Nullam consectetur volutpat</span
+          >
+          <img src="component/blog/image/tooplate_image_07.png" alt="" />
+          <button class="rounded-md bg-hoverBlack w-[3.5rem] mt-[2rem] text-paleWhite">
+                    More
+                  </button>
+        </div>
+      </div>
+      
+    </div>
+    <script src="./script/script.js"></script>
+  </body>
+</html>

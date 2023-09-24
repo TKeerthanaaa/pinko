@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pinko Contact</title>
+    <!-- play cdn for tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: "#e5425b",
+              red: "#DC143C",
+              white: "#fff",
+              paleWhite: "#bdacaa",
+              darkGray: "#A9A9A9",
+              black: "#000",
+              hoverBlack: "#000000e2",
+              grayBlack: "#252224",
+              transparent: "hsla(0, 0%, 0%, 0.3)",
+            },
+            fontFamily: {
+              Montserrat: ["Montserrat", "sans-serif"],
+            },
+          },
+        },
+      };
+    </script>
+    <!-- google fonts link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- normalized css -->
+    <link rel="stylesheet" href="./style/normalized.css" />
+    <!-- fontAwesome CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- Customized css -->
+    <link rel="stylesheet" href="./style/customized.css" />
+    <style>
+      /* Style for the active link */
+      .active {
+        background-color: black !important;
+        color: white !important;
+      }
+    </style>
+  </head>
+  <body>
+    <!--Contents need to be placed here!-->
+    <div class="bg-transparent py-[0.3rem] z-50">
+      <img src="component/about/tooplate_sp_wrapper (1).jpg" alt="background" />
+      <header class="header-container w-[960px] px-3 m-auto mt-[-20rem]">
+        <nav
+          class="flex justify-between items-center w-[900px] h-[60px] px-[20]"
+        >
+          <div>
+            <img
+              class="w-[130px] ml-[5.5rem]"
+              src="component/tooplate_logo.png"
+              alt=""
+            />
+          </div>
+          <ul class="flex gap-[0.5rem] font-Montserrat text-white text-[15px]">
+            <li class="menu-item hover:bg-hoverBlack rounded-md py-1 px-2">
+              <a href="index.html">Home</a>
+            </li>
+            <li class="menu-item hover:bg-hoverBlack rounded-md py-1 px-2">
+              <a href="./aboutUs.html">About Us</a>
+            </li>
+            <li class="menu-item hover:bg-hoverBlack rounded-md py-1 px-2">
+              <a href="./blog.html">Blog</a>
+            </li>
+            <li class="menu-item hover:bg-hoverBlack rounded-md py-1 px-2">
+              <a href="./gallery.html">Gallery</a>
+            </li>
+            <li class="menu-item hover:bg-hoverBlack rounded-md py-1 px-2">
+              <a href="./contact.html">Contact Us</a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+      <main class="contact w-[900px] px-3 m-auto h[300px] py[5rem]">
+        <div class="flex flex gap-2 flex-col flex-direction: column;">
+          <h3
+            class="text-[34px] font-semibold ml-[3rem] mt-[2rem] text-paleWhite"
+          >
+            Contact Information
+          </h3>
+          <p class="ml-[3rem] text-[15px] text-darkGray">
+            Quisque sit amet libero ut urna sollicitudin sodales vitae nec leo.
+            Praesent ipsum erat, porttitor eget rhoncus in, mollis in arcu.
+            Vestibulum ultricies arcu a tellus interdum aliquam. Phasellus ipsum
+            dolor, varius non fringilla non, blandit vel libero. Validate
+            <span class="text-red underline font-semibold">XHTML</span> and
+            <span class="text-red underline font-semibold">CSS</span> .
+          </p>
+        </div>
+      </main>
+      <div
+        class="bg-grayBlack w-[100%] flex flex-direction: column gap-[2rem] px-[15rem] mt-[6rem]"
+      >
+        <div class="w-[100%]">
+          <h4 class="text-[1.5rem] text-white">Quick Contact Form</h4>
+          <div class="flex flex-col gap-2 mt-[1rem]">
+            <label for="name" class="text-paleWhite"
+            >Name:
+          </label>
+          <input  type="text" class="bg-hoverBlack w-[280px] text-white h-[20px]"/>
+          </div>
+          <div class="flex flex-col gap-2 mt-[1rem]">
+            <label for="email" class="text-paleWhite"
+            >Email:
+          </label>
+          <input  type="email" class="bg-hoverBlack w-[280px] text-white h-[20px]"/>
+          </div>
+          <div class="flex flex-col gap-2 mt-[1rem]">
+            <label for="name" class="text-paleWhite"
+            >Subject:
+          </label>
+          <input  type="text" class="bg-hoverBlack w-[280px] text-white h-[20px]"/>
+          </div>
+          <div class="flex flex-col gap-2 mt-[1rem]">
+            <label for="message" class="text-paleWhite"
+            >Message:
+          </label>
+          <textarea
+                  class="bg-black w-[70%] h-[300px] text-white"
+                  value="Message"
+                ></textarea>
+          </div>
+          <div class="mt-[2rem]">
+            <button class=" bg-hoverBlack w-[5rem] text-paleWhite">
+                    Send
+                  </button>
+                  <button class="bg-hoverBlack w-[5rem] ml-[13rem] text-paleWhite">
+                    Reset
+                  </button>
+          </div>
+          
+        </div>
+        
+        
+        <div class="w-[50%]">
+          <h3 class="text-[1.5rem] text-white">Where We Are</h3>
+          <img class='mt-[2rem]' src="component/contact/map_thumb.jpg" alt="">
+          <p class="mt-[2rem] text-[1.1rem] text-white">Mailing Address</p>
+          <p class="mt-[1rem] text-[1.1rem] text-white font-semibold">Company Name</p>
+          <p class="mt-[1rem] text-[0.9rem] text-paleWhite">158-162 Lorem ipsum dolor sit amet,
+In auctor imperdiet mattis, 15580
+Curabitur eu nunc pretium</p>
+<p class="mt-[1rem] text-white text-[0.9rem]">Tel: 070-010-7660
+</p>
+<p class="text-white text-[0.9rem]">Fax: 070-090-1840</p>
+      </div>
+    </div>
+
+    <script src="./script/script.js"></script>
+  </body>
+</html>

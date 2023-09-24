@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pinko Home</title>
+    <!-- play cdn for tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: "#e5425b",
+              red: "#DC143C",
+              white: "#fff",
+              paleWhite: "#bdacaa",
+              darkGray: "#A9A9A9",
+              black: "#000",
+              hoverBlack: "#000000e2",
+              grayBlack: "#252224",
+              transparent: "hsla(0, 0%, 0%, 0.3)",
+            },
+            fontFamily: {
+              Montserrat: ["Montserrat", "sans-serif"],
+            },
+          },
+        },
+      };
+    </script>
+    <!-- google fonts link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- normalized css -->
+    <link rel="stylesheet" href="./style/normalized.css" />
+    <!-- fontAwesome CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- Customized css -->
+    <link rel="stylesheet" href="./style/customized.css" />
+    <style>
+      /* Style for the active link */
+      .active {
+        background-color: black !important;
+        color: white !important;
+      }
+    </style>
+  </head>
+  <body>
+    <!--Contents need to be placed here!-->
+    <div class="bg-transparent py-[0.3rem] z-50">
+      <img
+        src="component/home/image/tooplate_fp_wrapper.jpg"
+        alt="background"
+      />
+      <header class="header-container w-[960px] px-3 m-auto mt-[-26rem]">
+        <nav
+          class="flex justify-between items-center w-[900px] h-[60px] px-[20]"
+        >
+          <div>
+            <img
+              class="w-[130px] ml-[5.5rem]"
+              src="component/tooplate_logo.png"
+              alt=""
+            />
+          </div>
+          <ul class="flex gap-[0.5rem] font-Montserrat text-white text-[15px]">
+            <li class="menu-item hover:bg-hoverBlack rounded-md py-1 px-2">
+              <a href="index.html">Home</a>
+            </li>
+            <li class="menu-item hover:bg-hoverBlack rounded-md py-1 px-2">
+              <a href="./aboutUs.html">About Us</a>
+            </li>
+            <li class="menu-item hover:bg-hoverBlack rounded-md py-1 px-2">
+              <a href="./blog.html">Blog</a>
+            </li>
+            <li class="menu-item hover:bg-hoverBlack rounded-md py-1 px-2">
+              <a href="./gallery.html">Gallery</a>
+            </li>
+            <li class="menu-item hover:bg-hoverBlack rounded-md py-1 px-2">
+              <a href="./contact.html">Contact Us</a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+      <main
+        class="home-container w-[100%] flex flex-row gap-[2rem] px-[15rem] mt-[2rem]"
+      >
+        <div class="flex flex gap-2 flex-col w-[40%] mt-[-2.5rem]">
+          <h3 class="text-[34px] ml-[2.5rem] mt-[2rem] text-paleWhite">
+            Cras a risus dolor ac accumsan enim
+          </h3>
+
+          <p class="ml-[2.5rem] text-[15px] text-darkGray">
+            In hac habitasse platea dictumst. Nam tempor tortor elit, in
+            malesuada est. Maecenas fermentum lacus arcu, eu pretium mauris.
+            Cras a risus dolor, ac accumsan enim. Sed vehicula vestibulum
+            pulvinar.
+          </p>
+          <button
+            class="rounded-md bg-hoverBlack w-[7rem] h-[2rem] text-paleWhite ml-[2.5rem]"
+          >
+            Learn More
+          </button>
+        </div>
+        <div class="right-side">
+          <img src="component/home/image/slider_bg.png" alt="" />
+        </div>
+        <div class="ml-[-29.2rem] mt-[2rem]">
+          <img src="component/home/image/slider/image_00.jpg" alt="fish" />
+        </div>
+      </main>
+      <div
+        class="bg-grayBlack w-[100%] flex flex-direction: column gap-[2rem] px-[15rem]"
+      >
+        <div class="w-[100%]">
+          <h3 class="text-[2rem] text-white">Welcome To Pinko Theme</h3>
+          <div class="w-[100%] flex flex-row">
+            <img
+              class="w-[100%] h-[20%] mt-[2rem]"
+              src="component/home/image/tooplate_image_01.png"
+              alt="tool"
+            />
+          </div>
+        </div>
+        <div class="w-[120%]">
+          <p class="text-[0.9rem] text-white font-style: italic mt-[5rem]">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam
+            rutrum rhoncus pharetra. Sed in urna neque. Suspendisse nec arcu
+            arcu, sed pretium lacus.
+          </p>
+          <p class="text-paleWhite mt-[0.5rem] text-[0.8rem]">
+            Pinko Theme is brought to you by
+            <span class="text-red underline">Website Templates</span>. Feel free
+            to adapt and apply this template for your websites. Credits go to
+            <span class="text-red underline">Free Photos</span> for photos and
+            <span class="text-red underline">forty-winks</span> for brushes.
+            Vivamus leo velit, convallis id, ultrices sit amet, tempor a,
+            libero. Quisque rhoncus nulla quis sem. Mauris quis nulla sed ipsum
+            pretium sagittis. Suspendisse feugiat. Validate
+            <span class="text-red underline font-semibold">XHTML</span> and
+            <span class="text-red underline font-semibold">CSS</span> .
+          </p>
+        </div>
+      </div>
+      <div
+        class="bg-grayBlack w-[100%] flex flex-row	flex-direction: row; gap-[2rem] px-[15rem] py-[4rem]"
+      >
+        <div class="w-[50%] flex flex-col	flex-direction: column; gap-[0.8rem]">
+          <h3 class="text-[28px] font-semibold text-white ">Service Quality</h3>
+          <div class="flex gap-[0.9rem]">
+            <img src="component/home/image/footer/onebit_08.png" alt="">
+            <p class="text-[12px] text-darkGray">Credit goes to <span class="text-red underline">icojoy.com</span> for Onebit icons #2 used in this template. Etiam vel elit massa, sit amet.</p>
+          </div>
+            <button class="rounded-md bg-hoverBlack w-[5rem] text-paleWhite text-[0.9rem]">
+                    Details
+          </div>
+          <div class="w-[50%] flex flex-col	flex-direction: column; gap-[0.8rem]">
+          <h3 class="text-[28px] font-semibold text-white ">Marketing</h3>
+          <div class="flex gap-[0.9rem]">
+            <img src="component/home/image/footer/onebit_15.png" alt="">
+            <p class="text-[12px] text-darkGray">Aenean molestie nulla ac enim gravida luctus. Donec ut sodales eros. Aenean nec massa nulla.</p>
+          </div>
+            <button class="rounded-md bg-hoverBlack w-[5rem] text-paleWhite text-[0.9rem]">
+                    Details
+          </div>
+        <div class="w-[50%] flex flex-col	flex-direction: column; gap-[0.8rem]">
+          <h3 class="text-[28px] font-semibold text-white ">Advertising</h3>
+          <div class="flex gap-[0.9rem]">
+            <img src="component/home/image/footer/onebit_16.png" alt="">
+            <p class="text-[12px] text-darkGray">Curabitur sed lectus id erat viverra consectetur nec in sapien. Etiam vitae tortor mi. Aliquam erat volutpat.</p>
+          </div>
+            <button class="rounded-md bg-hoverBlack w-[5rem] text-paleWhite text-[0.9rem]">
+                    Details
+          </div>
+      </div>
+      <div
+        class="bg-grayBlack w-[100%] flex flex-row	flex-direction: row; gap-[2rem] px-[15rem] py-[0.5rem]"
+      >
+        <div class="w-[50%] flex flex-col	flex-direction: column; gap-[0.8rem]">
+          <h3 class="text-[28px] font-semibold text-white ">
+Client Support</h3>
+          <div class="flex gap-[0.9rem]">
+            <img src="component/home/image/footer/onebit_17.png" alt="">
+            <p class="text-[12px] text-darkGray">Nullam vel sodales leo. Nam sollicitudin tincidunt eros ac eleifend. Sed id diam dui.</p>
+          </div>
+            <button class="rounded-md bg-hoverBlack w-[5rem] text-paleWhite text-[0.9rem]">
+                    Details
+          </div>
+          
+          <div class="w-[50%] flex flex-col	flex-direction: column; gap-[0.8rem]">
+          <h3 class="text-[28px] font-semibold text-white ">
+Social Media</h3>
+          <div class="flex gap-[0.9rem]">
+            <img src="component/home/image/footer/onebit_18.png" alt="">
+            <p class="text-[12px] text-darkGray">Vivamus sollicitudin euismod massa, non feugiat nulla egestas ut. Sed vel justo quis ligula blandit.</p>
+          </div>
+            <button class="rounded-md bg-hoverBlack w-[5rem] text-paleWhite text-[0.9rem]">
+                    Details
+          </div>
+        <div class="w-[50%] flex flex-col	flex-direction: column; gap-[0.8rem]">
+          <h3 class="text-[28px] font-semibold text-white ">Worldwide</h3>
+          <div class="flex gap-[0.9rem]">
+            <img src="component/home/image/footer/onebit_19.png" alt="">
+            <p class="text-[12px] text-darkGray">Suspendisse metus felis, varius at euismod eu, egestas eu elit ante ipsum primis in orci luctus.</p>
+          </div>
+            <button class="rounded-md bg-hoverBlack w-[5rem] text-paleWhite text-[0.9rem]">
+                    Details
+          </div>
+    </div>
+
+    <script src="./script/script.js"></script>
+  </body>
+</html>
